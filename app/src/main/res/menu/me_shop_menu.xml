@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="@string/家用"
+        android:id="@+id/meshop_home_menu"/>
+    <item
+        android:title="@string/电子"
+        android:id="@+id/meshop_electronic_menu"/>
+    <item
+        android:title="@string/服饰"
+        android:id="@+id/meshop_dress_menu"/>
+    <item
+        android:title="@string/玩具"
+        android:id="@+id/meshop_toy_menu"/>
+    <item
+        android:title="@string/图书"
+        android:id="@+id/meshop_books_menu"/>
+    <item
+        android:title="@string/礼品"
+        android:id="@+id/meshop_gift_menu"/>
+    <item
+        android:title="@string/其他"
+        android:id="@+id/meshop_else_menu"/>
+</menu>

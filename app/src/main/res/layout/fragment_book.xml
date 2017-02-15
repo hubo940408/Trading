@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:background="#e2dede"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+    <RelativeLayout
+        android:background="@drawable/book_sousuo"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <EditText
+            android:id="@+id/book_top_et"
+            android:layout_marginLeft="10dp"
+            android:hint="@string/搜索"
+            android:drawableLeft="@mipmap/find_defult"
+            android:background="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="35dp" />
+        <ImageView
+            android:id="@+id/book_error_im"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/ease_search_clear_pressed"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </RelativeLayout>
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+</LinearLayout>

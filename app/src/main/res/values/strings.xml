@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">我的易淘</string>
+    <string name="上传商品">上传商品</string>
+    <string name="我的商品">我的商品</string>
+    <string name="个人信息">个人信息</string>
+    <string name="搜索">搜索</string>
+    <string name="家用">家用</string>
+    <string name="电子">电子</string>
+    <string name="服饰">服饰</string>
+    <string name="玩具">玩具</string>
+    <string name="图书">图书</string>
+    <string name="礼品">礼品</string>
+    <string name="其他">其他</string>
+    <string name="用户名">用户名</string>
+    <string name="密码">密码</string>
+    <string name="确认密码">确认密码</string>
+    <string name="快速注册">快速注册</string>
+    <string name="昵称">昵称</string>
+    <string name="环信ID">环信ID</string>
+    <string name="退出当前登录">退出当前登录</string>
+</resources>
