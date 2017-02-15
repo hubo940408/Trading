@@ -1,4 +1,6 @@
 apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+
 
 android {
     compileSdkVersion 25
@@ -29,8 +31,14 @@ dependencies {
     compile 'com.ashokvarma.android:bottom-navigation-bar:1.2.0'
     compile 'com.squareup.okhttp3:okhttp:3.6.0'
     compile 'com.google.code.gson:gson:2.2.4'
-
     testCompile 'com.squareup.okhttp3:mockwebserver:3.6.0'
     compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
     compile files('libs/GsonFormat1.1.2.jar')
+    //图片裁剪的库
+    compile 'org.hybridsquad.android.photocropper:library:2.1.0'
+
+    compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+
+
 }

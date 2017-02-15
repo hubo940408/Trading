@@ -18,4 +18,6 @@
     <string name="昵称">昵称</string>
     <string name="环信ID">环信ID</string>
     <string name="退出当前登录">退出当前登录</string>
+    <string name="相册">相册</string>
+    <string name="相机">相机</string>
 </resources>
