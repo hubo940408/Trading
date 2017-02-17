@@ -5,5 +5,6 @@ package personal.edu.trading.Interface;
  * Created by Administrator on 2017/2/10 0010.
  */
 public interface Interface_A {
-    public void send();
+    void send();
+    void sengim(String url);
 }

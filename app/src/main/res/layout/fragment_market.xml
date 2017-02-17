@@ -1,11 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/market_recyclerView"
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout
+        android:layout_weight="1"
+        android:id="@+id/market_ptrClassicFrameLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="0dp">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/market_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    </android.support.v7.widget.RecyclerView>
+        </android.support.v7.widget.RecyclerView>
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/market_loading"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/ma111"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textSize="15sp"
+            android:text="@string/加载中"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ProgressBar
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/ma111"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </RelativeLayout>
 </LinearLayout>
+    <ProgressBar
+        android:id="@+id/market_pb"
+        android:layout_centerInParent="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <TextView
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:id="@+id/market_failure_tv"
+        android:layout_centerInParent="true"
+        android:text="@string/网络连接失败"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/market_noshop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/没有商品"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

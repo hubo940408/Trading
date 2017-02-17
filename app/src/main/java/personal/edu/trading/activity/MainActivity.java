@@ -1,28 +1,23 @@
 package personal.edu.trading.activity;
 
-import android.content.BroadcastReceiver;
-import android.content.Context;
-import android.content.Intent;
-import android.content.IntentFilter;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.widget.TextView;
 
 import com.ashokvarma.bottomnavigation.BottomNavigationBar;
 import com.ashokvarma.bottomnavigation.BottomNavigationItem;
 
 import personal.edu.trading.Interface.Interface_A;
+import personal.edu.trading.commit.Local_preservation;
 import personal.edu.trading.R;
 import personal.edu.trading.fragment.Fragment_Book;
 import personal.edu.trading.fragment.Fragment_Market;
 import personal.edu.trading.fragment.Fragment_Me;
 import personal.edu.trading.fragment.Fragment_News;
-import personal.edu.trading.user.User;
 
 /**
  * 主页面
@@ -38,22 +33,12 @@ public class MainActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         fragment_me =new Fragment_Me();
+
         inCiclk();
 
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-
-    }
-
-
-
-
-
     BottomNavigationBar navigationBar;
-
 
     /**
      * viewpager适配器
@@ -87,13 +72,14 @@ public class MainActivity extends AppCompatActivity{
 
     void inCiclk() {
         main_fragment = (ViewPager) findViewById(R.id.main_fragment);
+
         toolbar = (Toolbar) findViewById(R.id.main_toolbar);
         toolbar_title = (TextView) findViewById(R.id.main_toolbar_title);
 
         //底部导航栏加载
         navigationBar = (BottomNavigationBar) findViewById(R.id.main_bottombar);
         navigationBar.setMode(BottomNavigationBar.MODE_SHIFTING);
-        navigationBar.setBackgroundStyle(BottomNavigationBar.BACKGROUND_STYLE_STATIC);
+        navigationBar.setBackgroundStyle(BottomNavigationBar.BACKGROUND_STYLE_RIPPLE);
         navigationBar.addItem(new BottomNavigationItem(R.mipmap.ic_shopping_one, "市场")
                 .setActiveColorResource(R.color.toolbar))
                 .addItem(new BottomNavigationItem(R.mipmap.ic_chat_one, "消息")
@@ -103,7 +89,7 @@ public class MainActivity extends AppCompatActivity{
                 .addItem(new BottomNavigationItem(R.mipmap.ic_perm_identity_one, "我的")
                         .setActiveColorResource(R.color.bottombar_rose))
                 .setFirstSelectedPosition(0).initialise();
-
+        main_fragment.setOffscreenPageLimit(3);//加载数
         //导航栏点击监听
         navigationBar.setTabSelectedListener(new BottomNavigationBar.OnTabSelectedListener() {
             @Override
@@ -164,5 +150,6 @@ public class MainActivity extends AppCompatActivity{
         super.onRestart();
         Interface_A interface_a= (Interface_A) fragment_me;
         interface_a.send();
+        interface_a.sengim(Local_preservation.getUser().getOther());
     }
 }

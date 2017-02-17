@@ -12,4 +12,27 @@
         android:layout_height="wrap_content">
 
     </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <in.srain.cube.views.ptr.PtrClassicFrameLayout
+            android:id="@+id/meshop_ptrclassic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/meshop_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+        </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+        <TextView
+            android:id="@+id/meshop_noshop"
+            android:text="@string/该类暂无商品"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
 </LinearLayout>

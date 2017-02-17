@@ -19,5 +19,14 @@ public class SharedPf {
         return spf.getBoolean("mean",false);
     }
 
-
+    public static void setActivity(Context context,int login){
+        SharedPreferences spf=context.getSharedPreferences("activity",Context.MODE_PRIVATE);
+        SharedPreferences.Editor ed=spf.edit();
+        ed.putInt("mean",login);
+        ed.commit();
+    }
+    public static int getActivity(Context context){
+        SharedPreferences spf=context.getSharedPreferences("activity",Context.MODE_PRIVATE);
+        return spf.getInt("mean",0);
+    }
 }

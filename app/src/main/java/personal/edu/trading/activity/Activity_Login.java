@@ -10,7 +10,6 @@ import android.support.v7.widget.Toolbar;
 
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -29,7 +28,7 @@ import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Response;
 import okhttp3.ResponseBody;
-import personal.edu.trading.Local_preservation;
+import personal.edu.trading.commit.Local_preservation;
 import personal.edu.trading.R;
 import personal.edu.trading.SharedPf;
 import personal.edu.trading.http.EasyShopClient;

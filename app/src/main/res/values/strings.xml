@@ -20,4 +20,11 @@
     <string name="退出当前登录">退出当前登录</string>
     <string name="相册">相册</string>
     <string name="相机">相机</string>
+    <string name="没有商品">没有商品</string>
+    <string name="网络连接失败">加载时发生错误-_-||</string>
+    <string name="加载中">加载中......</string>
+    <string name="删除">删除</string>
+    <string name="发消息">发消息</string>
+    <string name="联系他">联系他</string>
+    <string name="该类暂无商品">该类暂无商品-_-||</string>
 </resources>

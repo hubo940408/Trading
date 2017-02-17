@@ -1,4 +1,4 @@
-package personal.edu.trading;
+package personal.edu.trading.commit;
 
 import android.content.Context;
 import android.content.SharedPreferences;

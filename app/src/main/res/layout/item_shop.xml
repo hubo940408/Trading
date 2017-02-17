@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/toolbar_yellow"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/itemshop_im"
+        android:layout_margin="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="180dp" />
+    <TextView
+        android:id="@+id/itemshop_name_tv"
+        android:layout_below="@id/itemshop_im"
+        android:layout_marginLeft="5dp"
+        android:textSize="18sp"
+        android:text="adsdads"
+        android:layout_marginBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/itemshop_price_tv"
+        android:layout_below="@id/itemshop_im"
+        android:textSize="18sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:text="adsaadad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

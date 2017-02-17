@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="toolbar">#f46738</color>
+    <color name="toolbar_yellow">#f2bb13</color>
     <color name="toolbar_gray">#b4b3b2</color>
     <color name="bottombar_blue">#303F9F</color>
     <color name="bottombar_rose">#d61b72</color>
